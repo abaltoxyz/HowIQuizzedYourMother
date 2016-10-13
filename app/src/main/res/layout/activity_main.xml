@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.example.howiquizzedyourmother.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/hero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/hero"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="48dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/heroText"
+                    android:text="@string/how_i_quizzed"
+                    android:textSize="32sp" />
+
+                <TextView
+                    style="@style/heroText"
+                    android:text="@string/your_mother"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--//XML for question # 1-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_one" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/color_mother_umbrella" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question1_option1"
+                style="@style/radioButton"
+                android:text="@string/red"/>
+
+            <RadioButton
+                android:id="@+id/question1_option2"
+                style="@style/radioButton"
+                android:text="@string/yellow" />
+
+            <RadioButton
+                android:id="@+id/question1_option3"
+                style="@style/radioButton"
+                android:text="@string/black" />
+
+            <RadioButton
+                android:id="@+id/question1_option4"
+                style="@style/radioButton"
+                android:text="@string/blue" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 2-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_two" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/name_favorite_pub" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question2_option1"
+                style="@style/radioButton"
+                android:text="@string/paddys_pub" />
+
+            <RadioButton
+                android:id="@+id/question2_option2"
+                style="@style/radioButton"
+                android:text="@string/the_griffin" />
+
+            <RadioButton
+                android:id="@+id/question2_option3"
+                style="@style/radioButton"
+                android:text="@string/maclarens_pub" />
+
+            <RadioButton
+                android:id="@+id/question2_option4"
+                style="@style/radioButton"
+                android:text="@string/joes" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 3-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_three" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/marshall_home_state" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question3_option1"
+                style="@style/radioButton"
+                android:text="@string/minnesota" />
+
+            <RadioButton
+                android:id="@+id/question3_option2"
+                style="@style/radioButton"
+                android:text="@string/wyoming" />
+
+            <RadioButton
+                android:id="@+id/question3_option3"
+                style="@style/radioButton"
+                android:text="@string/missouri" />
+
+            <RadioButton
+                android:id="@+id/question3_option4"
+                style="@style/radioButton"
+                android:text="@string/north_dakota" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 4-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_four" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/fruit_involved" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question4_option1"
+                style="@style/radioButton"
+                android:text="@string/watermelon" />
+
+            <RadioButton
+                android:id="@+id/question4_option2"
+                style="@style/radioButton"
+                android:text="@string/pineapple" />
+
+            <RadioButton
+                android:id="@+id/question4_option3"
+                style="@style/radioButton"
+                android:text="@string/avocado" />
+
+            <RadioButton
+                android:id="@+id/question4_option4"
+                style="@style/radioButton"
+                android:text="@string/papaya" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 5-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_five" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/lily_job_offer" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question5_option1"
+                style="@style/radioButton"
+                android:text="@string/italy" />
+
+            <RadioButton
+                android:id="@+id/question5_option2"
+                style="@style/radioButton"
+                android:text="@string/germany" />
+
+            <RadioButton
+                android:id="@+id/question5_option3"
+                style="@style/radioButton"
+                android:text="@string/france" />
+
+            <RadioButton
+                android:id="@+id/question5_option4"
+                style="@style/radioButton"
+                android:text="@string/spain" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 6-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_six" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/members_same_college" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/radioGroup">
+
+            <CheckBox
+                android:id="@+id/question6_option1"
+                style="@style/radioButton"
+                android:text="@string/marshall" />
+
+            <CheckBox
+                android:id="@+id/question6_option2"
+                style="@style/radioButton"
+                android:text="@string/barney" />
+
+            <CheckBox
+                android:id="@+id/question6_option3"
+                style="@style/radioButton"
+                android:text="@string/ted" />
+
+            <CheckBox
+                android:id="@+id/question6_option4"
+                style="@style/radioButton"
+                android:text="@string/lily" />
+
+        </LinearLayout>
+
+        <!--//XML for question # 7-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_seven" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/musical_instrument" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question7_option1"
+                style="@style/radioButton"
+                android:text="@string/guitar" />
+
+            <RadioButton
+                android:id="@+id/question7_option2"
+                style="@style/radioButton"
+                android:text="@string/flute" />
+
+            <RadioButton
+                android:id="@+id/question7_option3"
+                style="@style/radioButton"
+                android:text="@string/trumpet" />
+
+            <RadioButton
+                android:id="@+id/question7_option4"
+                style="@style/radioButton"
+                android:text="@string/horn" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 8-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_eight" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/last_girl_ted_dated" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question8_option1"
+                style="@style/radioButton"
+                android:text="@string/stella" />
+
+            <RadioButton
+                android:id="@+id/question8_option2"
+                style="@style/radioButton"
+                android:text="@string/jeannette" />
+
+            <RadioButton
+                android:id="@+id/question8_option3"
+                style="@style/radioButton"
+                android:text="@string/victoria" />
+
+            <RadioButton
+                android:id="@+id/question8_option4"
+                style="@style/radioButton"
+                android:text="@string/zoey" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 9-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_nine" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/animal_ted_fight" />
+
+        </LinearLayout>
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/question9_option1"
+                style="@style/radioButton"
+                android:text="@string/monkey" />
+
+            <RadioButton
+                android:id="@+id/question9_option2"
+                style="@style/radioButton"
+                android:text="@string/koala" />
+
+            <RadioButton
+                android:id="@+id/question9_option3"
+                style="@style/radioButton"
+                android:text="@string/goat" />
+
+            <RadioButton
+                android:id="@+id/question9_option4"
+                style="@style/radioButton"
+                android:text="@string/raccoon" />
+
+        </RadioGroup>
+
+        <!--//XML for question # 10-->
+        <LinearLayout style="@style/questionLinearLayout">
+
+            <TextView
+                style="@style/questionNumberText"
+                android:text="@string/number_ten" />
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/name_mother" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/question10_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:hint="@string/write_here"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="submitAnswers"
+            android:text="@string/submit" />
+
+
+        <TextView
+            style="@style/creditText"
+            android:text="@string/credit_one" />
+
+        <TextView
+            style="@style/creditText"
+            android:text="@string/credit_two" />
+
+        <TextView
+            style="@style/creditText"
+            android:text="@string/credit_three" />
+
+    </LinearLayout>
+</ScrollView>
